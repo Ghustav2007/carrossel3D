@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #1f1e1e;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    background: #2727274b;
+}
+
+@keyframes rotate360 {
+
+
+    from{
+        transform: rotateY(0deg);
+
+    }
+
+    to{
+        transform: rotateY(-360deg);
+
+    }
+
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://cdn.pixabay.com/photo/2017/12/17/19/07/church-3024768_1280.jpg);
+    transform: rotateY(0deg) translateZ(430px);}
+
+.imagem:nth-child(2){
+    background-image: url(https://cdn.pixabay.com/photo/2018/06/12/02/42/jesus-3469896_1280.jpg);
+    transform: rotateY(40deg) translateZ(430px);}
+.imagem:nth-child(3){
+    background-image: url(https://cdn.pixabay.com/photo/2015/03/30/14/35/love-699480_1280.jpg);
+    transform: rotateY(80deg) translateZ(430px);}
+.imagem:nth-child(4){
+    background-image: url(https://media.istockphoto.com/id/1325724094/pt/foto/christian-families-worship-god-in-the-garden-by-playing-guitar-and-holding-a-holy-bible-group.jpg?s=612x612&w=is&k=20&c=_vJxwRXrqydQYHX7E2fplm1fTILRqpuz0TN693g4cgA=);
+    transform: rotateY(120deg) translateZ(430px);}
+.imagem:nth-child(5){
+    background-image: url(https://media.istockphoto.com/id/1456438484/pt/foto/couple-praying-together.jpg?s=612x612&w=is&k=20&c=jvhLuw5LsWpap-qkPIev-mcuq7btkhI6LqKj7lCd9gg=);
+    transform: rotateY(160deg) translateZ(430px);}
+.imagem:nth-child(6){
+    background-image: url(https://cdn.pixabay.com/photo/2015/01/07/18/04/jesus-591742_1280.jpg);
+    transform: rotateY(200deg) translateZ(430px);}
+.imagem:nth-child(7){
+    background-image: url(https://cdn.pixabay.com/photo/2017/05/20/20/22/clouds-2329680_1280.jpg);
+    transform: rotateY(240deg) translateZ(430px);}
+.imagem:nth-child(8){
+    background-image: url(https://media.istockphoto.com/id/1352014770/pt/foto/large-mosaic-icon-on-a-facade-of-building-in-holy-trinity-saint-seraphim-diveyevo-convent-in.jpg?s=612x612&w=is&k=20&c=jYnFfv1yudkbHzIYN-k_dKeAiI5zFlc3tFqyBfZEW8k=);
+    transform: rotateY(280deg) translateZ(430px);}
+.imagem:nth-child(9){
+    background-image: url(https://cdn.pixabay.com/photo/2018/06/12/02/42/jesus-3469896_1280.jpg);
+    transform: rotateY(320deg) translateZ(430px);}
+
+
